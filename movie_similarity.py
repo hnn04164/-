@@ -19,11 +19,9 @@ userRating = np.zeros((a+1,b+1))
 for i in rating:
     userRating[[i[0]],[i[1]]] = i[2]
 
-print(userRating[6])
 p_count = 0
 for i in range(b+1):
     if userRating[6][i] > 0:
-        print(i)
         p_count +=1
     if p_count == 10:
         break
